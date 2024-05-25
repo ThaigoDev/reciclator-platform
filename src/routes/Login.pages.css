@@ -1,0 +1,125 @@
+*{
+    padding:0 ;
+    margin: 0;
+    box-sizing: border-box; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .a1 { 
+    padding:2vh; 
+     grid-area: a1; 
+     background: rgb(131,58,180);
+  background: -moz-linear-gradient(21deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  background: -webkit-linear-gradient(21deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  background: linear-gradient(21deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fcb045",GradientType=1);
+      border: none; 
+    height: 100vh; 
+    width: 100vw; 
+    display: flex;
+    align-items: start; 
+    justify-content: center;
+    flex-direction: column;
+  }  
+  .a1 > small {
+    font-size: 2em;  
+    color: white;
+    font-weight: bold; 
+  
+    
+  } 
+  .a1 > h1 {
+    font-size: 4em;  
+    color: white;
+    font-weight: bold; 
+    
+    
+  }
+  .a2 { 
+   
+    grid-area: a2;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 100vw; 
+    height: 100vh;
+  
+  } 
+  .content {
+    
+    display: grid; 
+    grid-template-areas: 
+    "a2 a2" 
+    "a1 a1" ;
+  }    
+
+
+  .Form-body {
+    height: 50vh;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    width: 80%; 
+    gap: 3vh 
+
+
+} 
+.title-form {
+   font-size: 2em; 
+   font-weight: bold;  
+
+} 
+.Form-body > input {
+ padding: 1.4vh;
+ width: 100%;
+font-size: 1.3em; 
+border-radius: 1vh; 
+border: none;  
+background-color: aliceblue;
+
+
+}  
+.Form-body > input:focus {
+   outline: none; 
+   border: none;
+} 
+.btn {
+   padding: 2vh; 
+   width: 100%; 
+   font-size: 1.3em; 
+   background: rgb(131,58,180);
+   background: -moz-linear-gradient(21deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+   background: -webkit-linear-gradient(21deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+   background: linear-gradient(21deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fcb045",GradientType=1);
+border: none; 
+color: white; 
+border-radius: 1vh; 
+ font-size: 1.5em ;
+ font-weight: bold;  
+ cursor:pointer; 
+
+}   
+@media (min-width: 1200px ) {
+   .Form-body {
+       width: 50%;
+   }     
+   .a1 {
+       font-size: 1.5em;
+   }
+}
+
+  @media(min-width:1200px) {
+    .content {
+      grid-template-areas: 
+      "a1 a2"
+      "a1 a2"
+      
+    } 
+    .a1,.a2 {
+      width: 50vw ;
+    }  
+    
+  
+  }
